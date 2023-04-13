@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Autobiography HTML</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/icon.png">
+
+
+	<!-- stylesheet css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fonts.min.css">
+	<link rel="stylesheet" href="css/indexx.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Sriracha&family=Varela+Round&display=swap" rel="stylesheet">
+	<script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<div class="preloader">
+		<video class="video" src="images/load.mp4" autoplay muted></video>
+	</div>
+
+	<script>
+		// Hide preloader after video ends
+		const preloader = document.querySelector('.preloader');
+		const video = preloader.querySelector('.video');
+		video.addEventListener('ended', () => {
+			preloader.style.opacity = '0';
+			setTimeout(() => {
+				preloader.style.display = 'none';
+			}, 1000); // hide slowly after 1 second
+		});
+	</script>
+
+
+<body data-spy="scroll" data-target=".navbar-collapse">
+
+
+	<!-- stylesheet css -->
+<link rel="stylesheet" href="css/navbarr.css">
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      kl :)
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+    <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a href="./index.html" target="_self">Home</a>
+    <a href="./about.html" target="_self">About Me</a>
+    <a href="./calculator.html" target="_self">Activity</a>
+  </div>
+</div>
+
+
+
+<!-- header section -->
+<video class="video-bg" autoplay muted loop>
+		<source src="images/lv_0_20230403235316.mp4">
+	</video>
+
+	<script>
+		// Set default cursor on page load
+		document.addEventListener('DOMContentLoaded', function() {
+        document.body.style.cursor = 'url("cur1.png"), auto';
+      });
+      // Change cursor on hover over href
+      const hrefElements = document.querySelectorAll('a');
+      for (let i = 0; i < hrefElements.length; i++) {
+        hrefElements[i].addEventListener('mouseover', function() {
+          document.body.style.cursor = 'url("cur2.png"), pointer';
+          hrefElements[i].style.cursor = 'url("cur2.png"), pointer';
+        });
+        hrefElements[i].addEventListener('mouseout', function() {
+          document.body.style.cursor = 'url("cur1.png"), auto';
+          hrefElements[i].style.cursor = 'url("cur1.png"), auto';
+        });
+        hrefElements[i].addEventListener('click', function() {
+          document.body.style.cursor = 'url("cur1.png"), auto';
+          hrefElements[i].style.cursor = 'url("cur1.png"), auto';
+        });
+      }
+	  </script>
+
+<header>
+	
+	<div class="container">
+		<div class="row">
+		<div class="col-md-12 col-sm-12">
+		
+				<img src="images/picc.jpg" class="img img-circle tm-border" alt="profile">
+				
+				<h1 class="tm-title bold shadow">Hi there,</h1>
+				<h1 class="white outline bold shadow" >I'm Kristhia</h1>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- about and skills section -->
+<video class="video-bg" autoplay muted loop>
+		<source src="images/lv_0_20230403235316.mp4">
+	</video>
+<section class="container">
+	<div class="row">
+	<div class="col-md-12 col-sm-10">
+			<div class="about">
+				
+				<h2 class="aboutb">Greetings!</h2>
+				<p>Welcome to my website, which serves as my midterm examination for the subject Web Systems Technology (EIT 0123.1-1) under the guidance of Ms. Jamillah S. Guialil. </p>
+				<p>On this website, you will find an "About Me" section where I have provided a glimpse of my life goals, education, hobbies, experiences, and skills.
+				   Additionally, you will also find an "Activity" tab where you can view and use a simple functional calculator that I developed as part of a school activity.</p> 
+				<p>I have put a lot of time and effort into creating this website therefore I am looking forward to sharing this website and displaying my newfound coding skills. I hope it will give an idea of my abilities and interests.</p>
+				<p> Thank you for being here!</p>
+			</div>
+			<br></br>
+		</div>
+
+		<section class="container">
+	<div class="row">
+	<div class="col-md-6 col-sm-6">
+			<div class="about">
+				
+				<h2 class="aboutp">About Me</h2>
+				<p>Find everything you need to know about me, from my education and career goals to my hobbies and interests.</p>
+				<p>I'm excited to share and give you a sense of who I am as a person. So sit back, relax, and enjoy getting to know me a little better.</p>
+				<p><a href="./about.php" target="_self">View here 🢂</a></p>
+			</div>
+			<br></br>
+		</div>
+		
+		<section class="container">
+	<div class="row">
+	<div class="col-md-6 col-sm-6">
+			<div class="about">
+				
+				<h2 class="aboutp">Activity</h2>
+				<p>Here, you will find a cute and functional calculator that I developed as part of an activity. This calculator not only performs basic arithmetic operations but also comes with delightful popping sounds to add to your experience.
+
+I hope that you enjoy using this calculator as much as I enjoyed creating it, give it a try!</p>
+				<p><a href="./calculator.html" target="_self">View here 🢂</a></p>
+			</div>
+			<br></br>
+		</div>
+
+		
+	
+		<section class="container">
+	<div class="row">
+	<div class="col-md-12 col-sm-10">
+			<div class="aboutr">
+				
+				<h2 class="aboutb">Dive deep and reflect ~</h2>
+
+				<p>As a freshman student with no IT background or prior experience in web development, my experience in the Web Systems Technology
+					subject has been both challenging and exciting. During this semester, I have been introduced to the basic concepts of web
+					development, such as HTML, CSS, and JavaScript, and I have learned how to build a website from scratch.</p>
+				<p>One of the most significant challenges I faced was understanding the various programming languages and technologies involved in
+					web development. At the beginning, I felt overwhelmed by the sheer number of technologies we were expected to learn, from HTML
+					and CSS to JavaScript and PHP. To overcome this challenge, I took a proactive approach to my learning by seeking out additional
+					resources outside of the classroom. I watched online tutorials, read books and articles.</p>
+				<p>Building a website for the first time was a daunting task, but also a fulfilling experience. One of the biggest challenges I
+					faced was learning how to debug errors in my code. When I encountered an error in my code, I often felt overwhelmed and didn't
+					know where to start looking for the problem. This was particularly frustrating when I thought I had written the code correctly,
+					but the website was not displaying the expected results.</p>
+					<p>To overcome this challenge, I learned to break down my code into smaller, more manageable pieces and test each component
+						individually. I also made use of debugging tools like the Debug CSS chrome extension and online resources to help me
+						identify and resolve issues in my code. Through this process, I gained a better understanding of how code works and how
+						to write more efficient and effective code.</p>
+				<p>Of course, there have been other challenges along the way (that if I discuss in details will be like an episode of MMK), but
+					with the help of my professor and classmates, I feel like I've been able to overcome these challenges and grow as an IT student.</p>
+				<p>As we move forward in the semester, I'm excited to continue building on what I've learned so far. I feel like I've just scratched
+					the surface of what's possible, and I'm eager to explore more about web development. All in all, I'm really glad we have this
+					subject and I feel like it's helped me like my course a bit more, and decreased my desire to shift.	</p>
+		
+
+			</div>
+			<br></br>
+		</div>
+
+<!-- footer section -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<br></br>
+				<p>Copyright &copy; 2023</p>
+				<ul class="social-icons">
+					<li><a href="https://www.facebook.com/0723s27853" class="fa fa-facebook"></a></li>
+                    <li><a href="https://open.spotify.com/user/31pbm2d2x6nu7vyw64bsrhmreis4" class="fa fa-spotify"></a></li>
+					<li><a href="https://www.instagram.com/nesciio_/" class="fa fa-instagram"></a></li>
+					<li><a href="https://github.com/kristhialastra" class="fa fa-github"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+            ScrollReveal({ 
+            reset: false, 
+            distance: '500px',
+            duration: 4500, 
+            delay: 300
+        });
+
+        ScrollReveal().reveal('.aboutb', { delay: 300, origin: 'top' });
+		ScrollReveal().reveal('.aboutp', { delay: 300, origin: 'top' });
+		ScrollReveal().reveal('.about', { delay: 300, origin: 'left' });
+		ScrollReveal().reveal('.aboutr', { delay: 300, origin: 'bottom' });
+		
+
+        </script>
+    
+</footer>
+<div align="center"> 
+    <audio autoplay loop controls>
+        <source src="images/music.mp3" type="audio/mpeg">
+      </audio>
+      
+      <script>
+        window.onload = function() {
+          var audio = document.getElementsByTagName('audio')[0];
+          audio.volume = 0.5;
+          audio.play();
+        }
+      </script>
+</body>
+</html>

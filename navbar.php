@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Sriracha&family=Varela+Round&display=swap" rel="stylesheet">
+   
+</head>
+
+<body data-spy="scroll" data-target=".navbar-collapse">
+  <!-- stylesheet css -->
+<link rel="stylesheet" href="css/navbarr.css">
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      kl :)
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+    <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a href="./index.php" target="_self">Home</a>
+    <a href="./about.php" target="_self">About Me</a>
+    <a href="./calculator.html" target="_self">Activity</a>
+  </div>
+</div>
+</body>
+</html>

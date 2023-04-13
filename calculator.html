@@ -1,0 +1,325 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icon.png">
+    
+
+    <title>Calculator</title>
+    <link href="css/calculator.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Sriracha&family=Varela+Round&display=swap" rel="stylesheet">
+   
+</head>
+
+<body data-spy="scroll" data-target=".navbar-collapse">
+
+  <!-- stylesheet css -->
+  <style>
+  /* Define the custom cursor */
+  body {
+    cursor: url('cur1.png'), auto;
+  }
+
+  /* Define the cursor for href elements */
+  a {
+    cursor: url('cur1.png'), auto;
+  }
+  
+  a:hover, a:active {
+    cursor: url('cur2.png'), pointer;
+  }
+</style>
+<link rel="stylesheet" href="css/navbarr.css">
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      kl :)
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+    <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a href="./index.html" target="_self">Home</a>
+    <a href="./about.html" target="_self">About Me</a>
+    <a href="./calculator.html" target="_self">Activity</a>
+  </div>
+</div>
+
+
+<!-- header section -->
+<video class="video-bg" autoplay muted loop>
+  <source src="images/lv_0_20230403235316.mp4">
+</video>
+
+<div class="cursor site-wide">
+  <div class="pointer"></div>
+</div>
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+	 <div class="layout"> 
+    <div class="calculator">
+        <div class="output">
+            <div data-previous class="previous"></div>
+            <div data-current class="current"></div>
+        </div>
+        <button onmousedown="sound1.play()" data-clear class="span-two" class="bp">Clear</button>
+        <button onmousedown="sound1.play()" data-delete class="bp">Del</button>
+        <button onmousedown="sound1.play()" data-operation class="bp">÷</button>
+        <button onmousedown="sound1.play()" data-number class="bw">1</button>
+        <button onmousedown="sound1.play()" data-number class="bw">2</button>
+        <button onmousedown="sound1.play()" data-number class="bw">3</button>
+        <button onmousedown="sound1.play()" data-operation class="bp">*</button>
+        <button onmousedown="sound1.play()" data-number class="bw">4</button>
+        <button onmousedown="sound1.play()" data-number class="bw">5</button>
+        <button onmousedown="sound1.play()" data-number class="bw">6</button>
+        <button onmousedown="sound1.play()" data-operation class="bp">+</button>
+        <button onmousedown="sound1.play()" data-number class="bw">7</button>
+        <button onmousedown="sound1.play()" data-number class="bw">8</button>
+        <button onmousedown="sound1.play()" data-number class="bw">9</button>
+        <button onmousedown="sound1.play()" data-operation class="bp">-</button>
+        <button onmousedown="sound1.play()" data-number class="bw">.</button>
+        <button onmousedown="sound1.play()" data-number class="bw">0</button>
+        <button onmousedown="sound1.play()" data-equals class="span-two" class="bp">=</button>
+    </div>
+	</div>
+  <script>
+    // Set default cursor on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      document.body.style.cursor = 'url("cur1.png"), auto';
+      document.querySelectorAll('button').forEach(function(button) {
+        button.style.cursor = 'url("cur1.png"), auto';
+      });
+    });
+  
+    // Change cursor on hover over button
+    document.querySelectorAll('.span-two button').forEach(function(button) {
+      button.addEventListener('mouseover', function() {
+        document.body.style.cursor = 'url("cur2.png"), pointer';
+        button.style.cursor = 'url("cur2.png"), pointer';
+      });
+      button.addEventListener('mouseout', function() {
+        document.body.style.cursor = 'url("cur1.png"), auto';
+        button.style.cursor = 'url("cur1.png"), auto';
+      });
+      button.addEventListener('click', function() {
+        document.body.style.cursor = 'url("cur1.png"), auto';
+        button.style.cursor = 'url("cur1.png"), auto';
+      });
+    });
+  
+    document.querySelectorAll('.bp button').forEach(function(button) {
+      button.addEventListener('mouseover', function() {
+        document.body.style.cursor = 'url("cur2.png"), pointer';
+        button.style.cursor = 'url("cur2.png"), pointer';
+      });
+      button.addEventListener('mouseout', function() {
+        document.body.style.cursor = 'url("cur1.png"), auto';
+        button.style.cursor = 'url("cur1.png"), auto';
+      });
+      button.addEventListener('click', function() {
+        document.body.style.cursor = 'url("cur1.png"), auto';
+        button.style.cursor = 'url("cur1.png"), auto';
+      });
+    });
+  
+    document.querySelectorAll('.bw button').forEach(function(button) {
+      button.addEventListener('mouseover', function() {
+        document.body.style.cursor = 'url("cur2.png"), pointer';
+        button.style.cursor = 'url("cur2.png"), pointer';
+      });
+      button.addEventListener('mouseout', function() {
+        document.body.style.cursor = 'url("cur1.png"), auto';
+        button.style.cursor = 'url("cur1.png"), auto';
+      });
+      button.addEventListener('click', function() {
+        document.body.style.cursor = 'url("cur1.png"), auto';
+        button.style.cursor = 'url("cur1.png"), auto';
+      });
+    });
+  </script>
+
+
+
+  <script>
+  var sound1 = new Audio();
+  sound1.src = "images/lv_0_20230408210338.mp3"
+  </script>
+  
+  <script>
+    
+class Calculator{
+	constructor(previousTextElement, currentTextElement) {
+		this.previousTextElement = previousTextElement
+		this.currentTextElement = currentTextElement
+		this.clear()
+	}
+	
+	clear(){
+			this.current = ''
+			this.previous = ''
+			this.operation = undefined
+	}
+	
+	delete(){
+			this.current = this.current.toString().slice(0, -1)
+	}
+	
+	appendNumber(number) {  
+	    if (number === '.' && this.current.includes('.')) return;
+        this.current = this.current.toString() + number.toString()
+  }
+	
+ chooseOperation(operation) {
+    if (this.current === '') return
+    if (this.previous !== '') {
+      this.compute()
+    }
+
+    this.operation = operation
+    this.previous = this.current
+    this.current = ''
+  }
+	
+compute() {
+    let computation
+    const prev = parseFloat(this.previous)
+    const current = parseFloat(this.current)
+    if (isNaN(prev) || isNaN(current)) return
+    
+    switch (this.operation) {
+      case '+':
+        computation = prev + current
+        break
+      case '-':
+        computation = prev - current
+        break
+      case '*':
+        computation = prev * current
+        break
+      case '÷':
+        computation = prev / current
+        break
+      default:
+        return
+    }
+    this.current = computation.toString()
+    this.operation = undefined
+    this.previous = ''
+  }
+	
+getDisplayNumber(number) {
+	
+	let str = ''
+	const arr = number.split('.')
+	
+	for(let i in arr[0]){
+		if(Number(i) !== 0 && i%3 === 0) str += ''
+		str += arr[0][i]
+	}
+	
+	if(number.endsWith('.')) str += '.'
+	if(arr[1]) str += '.'+arr[1]
+	
+	return str
+}
+	
+updateDisplay() {
+    this.currentTextElement.innerText =
+      this.getDisplayNumber(this.current)
+    if (this.operation) {
+      this.previousTextElement.innerText =
+        `${this.getDisplayNumber(this.previous)} ${this.operation}`
+    } else {
+      this.previousTextElement.innerText = ''
+    }
+  }
+}
+
+const numberButtons = document.querySelectorAll('[data-number]')
+const operationButtons = document.querySelectorAll('[data-operation]')
+
+const equalsButton = document.querySelector('[data-equals]')
+const deleteButton = document.querySelector('[data-delete]')
+const clearButton = document.querySelector('[data-clear]')
+
+const previousTextElement = document.querySelector('[data-previous]')
+const currentTextElement = document.querySelector('[data-current]')
+
+
+
+const calculator = new Calculator(previousTextElement, currentTextElement)
+
+
+numberButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    calculator.appendNumber(button.innerText)
+    calculator.updateDisplay()
+  })
+})
+
+operationButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    calculator.chooseOperation(button.innerText)
+    calculator.updateDisplay()
+  })
+})
+
+equalsButton.addEventListener('click', button => {
+  calculator.compute()
+  calculator.updateDisplay()
+})
+
+clearButton.addEventListener('click', button => {
+  calculator.clear()
+  calculator.updateDisplay()
+})
+
+deleteButton.addEventListener('click', button => {
+  calculator.delete()
+  calculator.updateDisplay()
+})
+  </script>
+
+  <!-- footer section -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<p>Copyright &copy; 2023</p>
+				<ul class="social-icons">
+					<li><a href="https://www.facebook.com/0723s27853" class="fa fa-facebook" target="_blank"></a></li>
+                    <li><a href="https://open.spotify.com/user/31pbm2d2x6nu7vyw64bsrhmreis4" class="fa fa-spotify" target="_blank"></a></li>
+					<li><a href="https://www.instagram.com/nesciio_/" class="fa fa-instagram" target="_blank"></a></li>
+					<li><a href="https://github.com/kristhialastra" class="fa fa-github"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<div align="center"> 
+  <audio autoplay loop controls>
+      <source src="images/music.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script>
+      window.onload = function() {
+        var audio = document.getElementsByTagName('audio')[0];
+        audio.volume = 0.1;
+        audio.play();
+      }
+    </script>
+</body>
+</html>
+

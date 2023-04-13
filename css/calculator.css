@@ -1,0 +1,299 @@
+ /* Define the custom cursor */
+ body {
+  cursor: url('cur1.png'), auto;
+}
+
+/* Define the cursor for href elements */
+a {
+  cursor: url('cur1.png'), auto;
+}
+
+a:hover, a:active {
+  cursor: url('cur2.png'), pointer;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Shrikhand&family=Sriracha&family=Varela+Round&display=swap');
+
+
+*, *::before, *::after{
+   
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+body{
+    padding:0;
+    margin: 0;
+    cursor: url('cur1.png'), auto;
+}
+
+
+.video-bg {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    background-repeat: repeat-x;
+  }
+  
+
+.layout{
+	margin: auto;
+	width: 350px;
+	height: 540px;
+	position: relative;
+	background: rgba(0, 0, 0, 0.774);
+	border-radius: 20px;
+   justify-content: center;
+	box-shadow: 7px 7px 15px #fc5661;
+    border-style: dashed;
+    border-color: #ffffff;
+    
+}
+
+.calculator{
+    height: 500px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 70px);
+   
+}
+
+.calculator > button{
+    margin: 6px;
+    color: #000000;
+    font-size: 2rem;
+    outline: none;
+    cursor: url('cur1.png'), auto;
+
+
+    font-family: 'Varela Round', sans-serif;
+    transition: transform 0.2s ease;
+    top: -70%;
+}
+button:hover, button:active {
+  cursor: url('cur2.png'), pointer;
+}
+
+.cursor{
+  
+  z-index: 999;
+  position: fixed;
+  background: #fFF;
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 30px #fc5661,
+              0 0 60px #ff6d76,
+              0 0 100px #ff818a;
+  animation: colors 5s infinite;
+  transform: translate(-50%, -50%);
+  display: none;
+  
+  }
+  
+  
+  
+
+.span-two{
+    grid-column: span 2;
+    height: 90%;
+    width: 95%;
+    border-radius: 5em;
+    background: linear-gradient(315deg, #fc737c, pink);
+	box-shadow: 2px 2px 6px #f58787;
+    font-family: 'Varela Round';
+    cursor: url('cur1.png'), auto;
+}
+
+.span-two button:hover, .span-two button:active {
+  cursor: url('cur2.png'), pointer;
+}
+
+.bw{
+    border-radius: 50%;
+    border: none;
+	 background: linear-gradient(315deg, #ffffff, pink);
+	 box-shadow: 2px 2px 6px #f58787;
+     font-family: 'Varela Round';
+     cursor: url('cur1.png'), auto;
+}
+
+.bp{
+    border-radius: 50%;
+    border: none;
+	 background: linear-gradient(315deg, #fc666e, pink);
+	 box-shadow: 2px 2px 6px #f58787;
+     font-family: 'Varela Round';
+     cursor: url('cur1.png'), auto;
+}
+
+.bp button:hover {
+  cursor: url('cur2.png'), pointer;
+}
+
+.bp:active{
+    background: linear-gradient(315deg, rgb(255, 51, 64), #fc666e);
+    transform: scale(0.65);
+    color: white;
+    cursor: url('cur2.png'), pointer;
+}
+
+.bw:active{
+    background: linear-gradient(315deg, rgb(255, 136, 142), pink);
+    transform: scale(0.65);
+    color: white;
+}
+
+.bw button:hover, .bw button:active {
+  cursor: url('cur2.png'), pointer;
+}
+
+button:active{
+	background: linear-gradient(315deg, rgb(255, 51, 64), #fc666e);
+    transform: scale(0.65);
+    color: white;
+    cursor: url('cur2.png'), pointer;
+}
+
+.output{
+    grid-column: 1/ -1;
+    box-shadow : inset -4px -4px 10px #ee848b71;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+	 flex-direction:column;
+	 padding: 0px 20px;
+	 word-wrap: break-word;
+	 word-break: break-all;
+    border-radius: 30px;
+    margin: 35px 0 30px 0;
+    background-color: #00000094;
+}
+.output .previous {
+	color: rgb(255, 255, 255, .7);
+	font-size: 20px;
+   margin-top:10px;
+}
+
+.output .current {
+	color: #fff;
+	font-size: 25px;
+   margin: 5px 0;
+
+  
+}
+
+* {
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    margin: 0px;
+   
+  }
+  
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #1a1a1af6;
+    position: relative;
+    
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Shrikhand', cursive;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #ffa3a5;
+    font-family: 'Shrikhand', cursive;
+    font-size: 17px;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(255, 255, 255);
+ 
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+      
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+      
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
